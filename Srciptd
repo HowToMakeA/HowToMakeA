@@ -1,0 +1,825 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SpecterGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Tp = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
+local MISC = Instance.new("TextButton")
+local Version = Instance.new("TextLabel")
+local Print = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+local UnU = Instance.new("TextButton")
+local MX = Instance.new("TextLabel")
+local MY = Instance.new("TextLabel")
+local CL = Instance.new("TextLabel")
+local ZG = Instance.new("TextLabel")
+local YG = Instance.new("TextLabel")
+local TL = Instance.new("TextLabel")
+local XG = Instance.new("TextLabel")
+local MZ = Instance.new("TextLabel")
+local CZ = Instance.new("TextLabel")
+local CY = Instance.new("TextLabel")
+local CX = Instance.new("TextLabel")
+local sos = Instance.new("TextBox")
+local go = Instance.new("TextButton")
+local Zp = Instance.new("TextBox")
+local Yp = Instance.new("TextBox")
+local Xp = Instance.new("TextBox")
+local TGC = Instance.new("TextButton")
+local MainEsp = Instance.new("Frame")
+local Ghost = Instance.new("TextButton")
+local Bone = Instance.new("TextButton")
+local FuseBox = Instance.new("TextButton")
+local MainMisc = Instance.new("Frame")
+local SS = Instance.new("TextBox")
+local AS = Instance.new("TextButton")
+local NVA = Instance.new("TextButton")
+local IS = Instance.new("TextButton")
+local CO = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local EJ = Instance.new("TextButton")
+
+--Properties:
+
+SpecterGui.Name = "SpecterGui"
+SpecterGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SpecterGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = SpecterGui
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BackgroundTransparency = 0.600
+Main.Size = UDim2.new(0, 104, 0, 537)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 104, 0, 31)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "SpecterGui"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Tp.Name = "Tp"
+Tp.Parent = Main
+Tp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tp.BackgroundTransparency = 0.200
+Tp.Position = UDim2.new(-0.105769277, 0, 0.0949720889, 0)
+Tp.Size = UDim2.new(0, 115, 0, 22)
+Tp.Font = Enum.Font.SourceSans
+Tp.Text = "Teleport Position"
+Tp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tp.TextSize = 14.000
+
+ESP.Name = "ESP"
+ESP.Parent = Main
+ESP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ESP.BackgroundTransparency = 0.200
+ESP.Position = UDim2.new(-0.0576923452, 0, 0.154562414, 0)
+ESP.Size = UDim2.new(0, 110, 0, 22)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextSize = 14.000
+
+MISC.Name = "MISC"
+MISC.Parent = Main
+MISC.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MISC.BackgroundTransparency = 0.200
+MISC.Position = UDim2.new(-0.0288461912, 0, 0.219739318, 0)
+MISC.Size = UDim2.new(0, 107, 0, 22)
+MISC.Font = Enum.Font.SourceSans
+MISC.Text = "MISC"
+MISC.TextColor3 = Color3.fromRGB(255, 255, 255)
+MISC.TextSize = 14.000
+
+Version.Name = "Version"
+Version.Parent = Main
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(-0.0096154213, 0, 0.906890154, 0)
+Version.Size = UDim2.new(0, 104, 0, 31)
+Version.Font = Enum.Font.SourceSans
+Version.Text = "Version: 1.0"
+Version.TextColor3 = Color3.fromRGB(0, 0, 0)
+Version.TextScaled = true
+Version.TextSize = 14.000
+Version.TextWrapped = true
+
+Print.Name = "Print"
+Print.Parent = Main
+Print.BackgroundColor3 = Color3.fromRGB(156, 156, 156)
+Print.BackgroundTransparency = 0.800
+Print.Position = UDim2.new(0, 0, 0.608938515, 0)
+Print.Size = UDim2.new(0, 104, 0, 28)
+Print.Visible = false
+Print.Font = Enum.Font.SourceSans
+Print.Text = "Print Position"
+Print.TextColor3 = Color3.fromRGB(0, 0, 0)
+Print.TextSize = 14.000
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(4.27884626, 0, 0, 0)
+Credits.Size = UDim2.new(0, 104, 0, 31)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Made By: htcasors"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+UnU.Name = "UnU"
+UnU.Parent = Main
+UnU.BackgroundColor3 = Color3.fromRGB(156, 156, 156)
+UnU.BackgroundTransparency = 0.800
+UnU.Position = UDim2.new(0.00961538497, 0, 0.761638641, 0)
+UnU.Size = UDim2.new(0, 104, 0, 28)
+UnU.Visible = false
+UnU.Font = Enum.Font.SourceSans
+UnU.Text = ";D"
+UnU.TextColor3 = Color3.fromRGB(0, 0, 0)
+UnU.TextSize = 14.000
+
+MX.Name = "MX"
+MX.Parent = Main
+MX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MX.BackgroundTransparency = 1.000
+MX.Position = UDim2.new(1.625, 0, 0.0577281117, 0)
+MX.Size = UDim2.new(0, 47, 0, 22)
+MX.Visible = false
+MX.Font = Enum.Font.SourceSans
+MX.Text = "X"
+MX.TextColor3 = Color3.fromRGB(0, 0, 0)
+MX.TextSize = 20.000
+
+MY.Name = "MY"
+MY.Parent = Main
+MY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MY.BackgroundTransparency = 1.000
+MY.Position = UDim2.new(1.625, 0, 0.085661076, 0)
+MY.Size = UDim2.new(0, 47, 0, 22)
+MY.Visible = false
+MY.Font = Enum.Font.SourceSans
+MY.Text = "Y"
+MY.TextColor3 = Color3.fromRGB(0, 0, 0)
+MY.TextSize = 20.000
+
+CL.Name = "CL"
+CL.Parent = Main
+CL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CL.BackgroundTransparency = 1.000
+CL.Position = UDim2.new(1.17307687, 0, 0.0167597681, 0)
+CL.Size = UDim2.new(0, 220, 0, 22)
+CL.Visible = false
+CL.Font = Enum.Font.SourceSans
+CL.Text = "Current Position:"
+CL.TextColor3 = Color3.fromRGB(0, 0, 0)
+CL.TextSize = 20.000
+
+ZG.Name = "ZG"
+ZG.Parent = Main
+ZG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZG.BackgroundTransparency = 1.000
+ZG.Position = UDim2.new(-0.153846204, 0, 0.409683406, 0)
+ZG.Size = UDim2.new(0, 120, 0, 23)
+ZG.Visible = false
+ZG.Font = Enum.Font.SourceSans
+ZG.Text = "Z"
+ZG.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZG.TextScaled = true
+ZG.TextSize = 14.000
+ZG.TextWrapped = true
+
+YG.Name = "YG"
+YG.Parent = Main
+YG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+YG.BackgroundTransparency = 1.000
+YG.Position = UDim2.new(-0.153846204, 0, 0.294227183, 0)
+YG.Size = UDim2.new(0, 120, 0, 23)
+YG.Visible = false
+YG.Font = Enum.Font.SourceSans
+YG.Text = "Y"
+YG.TextColor3 = Color3.fromRGB(0, 0, 0)
+YG.TextScaled = true
+YG.TextSize = 14.000
+YG.TextWrapped = true
+
+TL.Name = "TL"
+TL.Parent = Main
+TL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TL.BackgroundTransparency = 1.000
+TL.Position = UDim2.new(-0.153846204, 0, 0.111731827, 0)
+TL.Size = UDim2.new(0, 120, 0, 23)
+TL.Visible = false
+TL.Font = Enum.Font.SourceSans
+TL.Text = "Teleport"
+TL.TextColor3 = Color3.fromRGB(0, 0, 0)
+TL.TextScaled = true
+TL.TextSize = 14.000
+TL.TextWrapped = true
+
+XG.Name = "XG"
+XG.Parent = Main
+XG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XG.BackgroundTransparency = 1.000
+XG.Position = UDim2.new(-0.153846204, 0, 0.18808192, 0)
+XG.Size = UDim2.new(0, 120, 0, 23)
+XG.Visible = false
+XG.Font = Enum.Font.SourceSans
+XG.Text = "X"
+XG.TextColor3 = Color3.fromRGB(0, 0, 0)
+XG.TextScaled = true
+XG.TextSize = 14.000
+XG.TextWrapped = true
+
+MZ.Name = "MZ"
+MZ.Parent = Main
+MZ.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MZ.BackgroundTransparency = 1.000
+MZ.Position = UDim2.new(1.625, 0, 0.124767214, 0)
+MZ.Size = UDim2.new(0, 47, 0, 16)
+MZ.Visible = false
+MZ.Font = Enum.Font.SourceSans
+MZ.Text = "Z"
+MZ.TextColor3 = Color3.fromRGB(0, 0, 0)
+MZ.TextSize = 20.000
+
+CZ.Name = "CZ"
+CZ.Parent = Main
+CZ.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CZ.BackgroundTransparency = 1.000
+CZ.Position = UDim2.new(2, 0, 0.122905031, 0)
+CZ.Size = UDim2.new(0, 126, 0, 16)
+CZ.Visible = false
+CZ.Font = Enum.Font.SourceSans
+CZ.Text = "Position"
+CZ.TextColor3 = Color3.fromRGB(0, 0, 0)
+CZ.TextSize = 14.000
+
+CY.Name = "CY"
+CY.Parent = Main
+CY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CY.BackgroundTransparency = 1.000
+CY.Position = UDim2.new(2, 0, 0.0931098759, 0)
+CY.Size = UDim2.new(0, 126, 0, 16)
+CY.Visible = false
+CY.Font = Enum.Font.SourceSans
+CY.Text = "Position"
+CY.TextColor3 = Color3.fromRGB(0, 0, 0)
+CY.TextSize = 14.000
+
+CX.Name = "CX"
+CX.Parent = Main
+CX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CX.BackgroundTransparency = 1.000
+CX.Position = UDim2.new(2, 0, 0.0577281192, 0)
+CX.Size = UDim2.new(0, 126, 0, 21)
+CX.Visible = false
+CX.Font = Enum.Font.SourceSans
+CX.Text = "Position"
+CX.TextColor3 = Color3.fromRGB(0, 0, 0)
+CX.TextSize = 14.000
+
+sos.Name = "sos"
+sos.Parent = Main
+sos.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+sos.BackgroundTransparency = 0.200
+sos.Position = UDim2.new(0, 0, 0.687150836, 0)
+sos.Size = UDim2.new(0, 104, 0, 28)
+sos.Visible = false
+sos.Font = Enum.Font.SourceSans
+sos.PlaceholderText = "Name"
+sos.Text = ""
+sos.TextColor3 = Color3.fromRGB(255, 255, 255)
+sos.TextSize = 14.000
+
+go.Name = "go"
+go.Parent = Main
+go.BackgroundColor3 = Color3.fromRGB(156, 156, 156)
+go.BackgroundTransparency = 0.800
+go.Position = UDim2.new(0, 0, 0.521415234, 0)
+go.Size = UDim2.new(0, 104, 0, 28)
+go.Visible = false
+go.Font = Enum.Font.SourceSans
+go.Text = "GO"
+go.TextColor3 = Color3.fromRGB(0, 0, 0)
+go.TextSize = 14.000
+
+Zp.Name = "Zp"
+Zp.Parent = Main
+Zp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Zp.BackgroundTransparency = 0.200
+Zp.Position = UDim2.new(0, 0, 0.450651765, 0)
+Zp.Size = UDim2.new(0, 104, 0, 28)
+Zp.Visible = false
+Zp.Font = Enum.Font.SourceSans
+Zp.Text = ""
+Zp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Zp.TextSize = 14.000
+
+Yp.Name = "Yp"
+Yp.Parent = Main
+Yp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Yp.BackgroundTransparency = 0.200
+Yp.Position = UDim2.new(0.00961539149, 0, 0.337057739, 0)
+Yp.Size = UDim2.new(0, 102, 0, 28)
+Yp.Visible = false
+Yp.Font = Enum.Font.SourceSans
+Yp.Text = ""
+Yp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Yp.TextSize = 14.000
+
+Xp.Name = "Xp"
+Xp.Parent = Main
+Xp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Xp.BackgroundTransparency = 0.200
+Xp.Position = UDim2.new(0.00961539149, 0, 0.229050294, 0)
+Xp.Size = UDim2.new(0, 102, 0, 28)
+Xp.Visible = false
+Xp.Font = Enum.Font.SourceSans
+Xp.Text = ""
+Xp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Xp.TextSize = 14.000
+
+TGC.Name = "TGC"
+TGC.Parent = Main
+TGC.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+TGC.BackgroundTransparency = 0.500
+TGC.Position = UDim2.new(-0.115384579, 0, 0.832402289, 0)
+TGC.Size = UDim2.new(0, 116, 0, 30)
+TGC.Visible = false
+TGC.Font = Enum.Font.PatrickHand
+TGC.Text = "<--"
+TGC.TextColor3 = Color3.fromRGB(0, 0, 0)
+TGC.TextScaled = true
+TGC.TextSize = 14.000
+TGC.TextWrapped = true
+
+MainEsp.Name = "MainEsp"
+MainEsp.Parent = Main
+MainEsp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainEsp.BackgroundTransparency = 1.000
+MainEsp.Size = UDim2.new(0, 1371, 0, 537)
+MainEsp.Visible = false
+
+Ghost.Name = "Ghost"
+Ghost.Parent = MainEsp
+Ghost.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Ghost.BackgroundTransparency = 0.500
+Ghost.Position = UDim2.new(-0.0109409094, 0, 0.197392911, 0)
+Ghost.Size = UDim2.new(0, 119, 0, 23)
+Ghost.Font = Enum.Font.SourceSans
+Ghost.Text = "Ghost ESP"
+Ghost.TextColor3 = Color3.fromRGB(248, 248, 248)
+Ghost.TextScaled = true
+Ghost.TextSize = 14.000
+Ghost.TextWrapped = true
+
+Bone.Name = "Bone"
+Bone.Parent = MainEsp
+Bone.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Bone.BackgroundTransparency = 0.500
+Bone.Position = UDim2.new(-0.0109409094, 0, 0.262569815, 0)
+Bone.Size = UDim2.new(0, 119, 0, 23)
+Bone.Font = Enum.Font.SourceSans
+Bone.Text = "Bone ESP"
+Bone.TextColor3 = Color3.fromRGB(248, 248, 248)
+Bone.TextScaled = true
+Bone.TextSize = 14.000
+Bone.TextWrapped = true
+
+FuseBox.Name = "FuseBox"
+FuseBox.Parent = MainEsp
+FuseBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FuseBox.BackgroundTransparency = 0.500
+FuseBox.Position = UDim2.new(-0.0123996967, 0, 0.327746719, 0)
+FuseBox.Size = UDim2.new(0, 121, 0, 23)
+FuseBox.Font = Enum.Font.SourceSans
+FuseBox.Text = "FuseBox ESP"
+FuseBox.TextColor3 = Color3.fromRGB(248, 248, 248)
+FuseBox.TextScaled = true
+FuseBox.TextSize = 14.000
+FuseBox.TextWrapped = true
+
+MainMisc.Name = "MainMisc"
+MainMisc.Parent = Main
+MainMisc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainMisc.BackgroundTransparency = 1.000
+MainMisc.Size = UDim2.new(0, 1372, 0, 537)
+MainMisc.Visible = false
+
+SS.Name = "SS"
+SS.Parent = MainMisc
+SS.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SS.BackgroundTransparency = 0.400
+SS.Position = UDim2.new(0, 0, 0.100558661, 0)
+SS.Size = UDim2.new(0, 104, 0, 32)
+SS.Font = Enum.Font.SourceSans
+SS.PlaceholderText = "Speed"
+SS.Text = ""
+SS.TextColor3 = Color3.fromRGB(0, 0, 0)
+SS.TextSize = 14.000
+
+AS.Name = "AS"
+AS.Parent = MainMisc
+AS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AS.BackgroundTransparency = 0.900
+AS.Position = UDim2.new(-0.001457726, 0, 0.195530728, 0)
+AS.Size = UDim2.new(0, 104, 0, 26)
+AS.Font = Enum.Font.SourceSans
+AS.Text = "Add Speed"
+AS.TextColor3 = Color3.fromRGB(0, 0, 0)
+AS.TextSize = 14.000
+
+NVA.Name = "NVA"
+NVA.Parent = MainMisc
+NVA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NVA.BackgroundTransparency = 0.900
+NVA.Position = UDim2.new(-0.000728863, 0, 0.299813777, 0)
+NVA.Size = UDim2.new(0, 105, 0, 33)
+NVA.Font = Enum.Font.SourceSans
+NVA.Text = "Never Be Alone"
+NVA.TextColor3 = Color3.fromRGB(0, 0, 0)
+NVA.TextSize = 14.000
+
+IS.Name = "IS"
+IS.Parent = MainMisc
+IS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IS.BackgroundTransparency = 0.900
+IS.Position = UDim2.new(-0.000728863, 0, 0.381750464, 0)
+IS.Size = UDim2.new(0, 105, 0, 33)
+IS.Font = Enum.Font.SourceSans
+IS.Text = "Inf Sanity"
+IS.TextColor3 = Color3.fromRGB(0, 0, 0)
+IS.TextSize = 14.000
+
+CO.Name = "CO"
+CO.Parent = MainMisc
+CO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CO.BackgroundTransparency = 0.900
+CO.Position = UDim2.new(-0.001457726, 0, 0.540037274, 0)
+CO.Size = UDim2.new(0, 105, 0, 33)
+CO.Font = Enum.Font.SourceSans
+CO.Text = "Check Orbs"
+CO.TextColor3 = Color3.fromRGB(0, 0, 0)
+CO.TextSize = 14.000
+
+TextLabel.Parent = MainMisc
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0758017451, 0, 0.0577281192, 0)
+TextLabel.Size = UDim2.new(0, 908, 0, 50)
+TextLabel.Visible = false
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Orb = N/A"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+EJ.Name = "EJ"
+EJ.Parent = MainMisc
+EJ.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EJ.BackgroundTransparency = 0.900
+EJ.Position = UDim2.new(-0.001457726, 0, 0.456238389, 0)
+EJ.Size = UDim2.new(0, 105, 0, 33)
+EJ.Font = Enum.Font.SourceSans
+EJ.Text = "Enable Jump"
+EJ.TextColor3 = Color3.fromRGB(0, 0, 0)
+EJ.TextSize = 14.000
+
+-- Scripts:
+
+local function YSBRP_fake_script() -- Tp.LocalScript 
+	local script = Instance.new('LocalScript', Tp)
+
+	local a = script.Parent.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.ESP.Visible = false
+		script.Parent.Parent.MISC.Visible = false
+		a.UnU.Visible = true
+		a.Print.Visible = true
+		a.Xp.Visible = true
+		a.Yp.Visible = true
+		a.Zp.Visible = true
+		a.go.Visible = true
+		a.sos.Visible = true
+		a.CX.Visible = true
+		a.CY.Visible = true
+		a.CZ.Visible = true
+		a.MX.Visible = true
+		a.MY.Visible = true
+		a.CL.Visible = true
+		a.ZG.Visible = true
+		a.YG.Visible = true
+		a.TL.Visible = true
+		a.XG.Visible = true
+		a.MZ.Visible = true
+		a.TGC.Visible = true
+	end)
+end
+coroutine.wrap(YSBRP_fake_script)()
+local function MLXZDAK_fake_script() -- ESP.Base 
+	local script = Instance.new('LocalScript', ESP)
+
+	local s = script.Parent.Parent.ESP
+	local a = script.Parent.Parent
+
+	s.MouseButton1Click:Connect(function()
+		a.MainEsp.Visible = true
+		a.TGC.Visible = true
+		script.Parent.Visible = false
+		script.Parent.Parent.Tp.Visible = false
+		script.Parent.Parent.MISC.Visible = false
+	end)
+end
+coroutine.wrap(MLXZDAK_fake_script)()
+local function KLTGLJD_fake_script() -- MISC.LocalScript 
+	local script = Instance.new('LocalScript', MISC)
+
+	local a = script.Parent.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		a.MainMisc.Visible = true
+		a.TGC.Visible = true
+		script.Parent.Visible = false
+		script.Parent.Parent.Tp.Visible = false
+		script.Parent.Parent.ESP.Visible = false
+	end)
+end
+coroutine.wrap(KLTGLJD_fake_script)()
+local function VLQGV_fake_script() -- Print.LocalScript 
+	local script = Instance.new('LocalScript', Print)
+
+	local x = script.Parent.Parent.CX
+	local y = script.Parent.Parent.CY
+	local z = script.Parent.Parent.CZ
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("X = "..x.Text.." Y = "..y.Text.." Z = "..z.Text)
+	end)
+
+end
+coroutine.wrap(VLQGV_fake_script)()
+local function MDLXT_fake_script() -- UnU.LocalScript 
+	local script = Instance.new('LocalScript', UnU)
+
+	local main = script.Parent.Parent
+	local name = main.sos
+	local player = game.Players.LocalPlayer
+	local char = player.Character
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local part = Instance.new("Part")
+		part.Parent = game.Workspace
+		part.Name = ""..name.Text
+		part.Position = Vector3.new(char.Head.Position.X, char.Head.Position.Y, char.Head.Position.Z)
+		part.CanCollide = false
+		part.Transparency = 1
+		part.Anchored = true
+
+		local yey = Instance.new("BillboardGui")
+		yey.Parent = part
+		yey.Name = "BillboardGui"
+		yey.AlwaysOnTop = true
+		yey.Active = true
+		yey.Size = UDim2.new(0,200,0,50)
+
+		local txt = Instance.new("TextLabel")
+		txt.Parent = game.Workspace
+		wait(0.2)
+		txt.Parent = yey
+		txt.Name = "UwU"
+		txt.Size = UDim2.new(0,200,0,50)
+		txt.Text = ""..name.Text
+		txt.BackgroundTransparency = 1
+		txt.TextSize = 14
+	end)
+end
+coroutine.wrap(MDLXT_fake_script)()
+local function CASYG_fake_script() -- CZ.LocalScript 
+	local script = Instance.new('LocalScript', CZ)
+
+	local player = game.Players.LocalPlayer
+	local char = player.Character
+
+	while wait(0.1) do
+		script.Parent.Text = char.HumanoidRootPart.Position.Z
+	end
+end
+coroutine.wrap(CASYG_fake_script)()
+local function ESKZKX_fake_script() -- CY.LocalScript 
+	local script = Instance.new('LocalScript', CY)
+
+	local player = game.Players.LocalPlayer
+	local char = player.Character
+
+	while wait(0.1) do
+		script.Parent.Text = char.HumanoidRootPart.Position.Y
+	end
+end
+coroutine.wrap(ESKZKX_fake_script)()
+local function RYGSG_fake_script() -- CX.LocalScript 
+	local script = Instance.new('LocalScript', CX)
+
+	local player = game.Players.LocalPlayer
+	local char = player.Character
+
+	while wait(0.1) do
+		script.Parent.Text = char.HumanoidRootPart.Position.X
+	end
+end
+coroutine.wrap(RYGSG_fake_script)()
+local function JUGYHXE_fake_script() -- go.LocalScript 
+	local script = Instance.new('LocalScript', go)
+
+	local player = game.Players.LocalPlayer
+	local char = player.Character
+	local X = script.Parent.Parent.Xp
+	local Y = script.Parent.Parent.Yp
+	local Z = script.Parent.Parent.Zp
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local move = Vector3.new(X.Text, Y.Text, Z.Text)
+		char:moveTo(move)
+	end)
+
+end
+coroutine.wrap(JUGYHXE_fake_script)()
+local function NMLC_fake_script() -- TGC.LocalScript 
+	local script = Instance.new('LocalScript', TGC)
+
+	local a = script.Parent.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		a.MainEsp.Visible = false
+		a.MainMisc.Visible = false
+		script.Parent.Visible = false
+		a.UnU.Visible = false
+		a.Print.Visible = false
+		a.Xp.Visible = false
+		a.Yp.Visible = false
+		a.Zp.Visible = false
+		a.go.Visible = false
+		a.sos.Visible = false
+		a.CX.Visible = false
+		a.CY.Visible = false
+		a.CZ.Visible = false
+		a.MX.Visible = false
+		a.MY.Visible = false
+		a.CL.Visible = false
+		a.ZG.Visible = false
+		a.YG.Visible = false
+		a.TL.Visible = false
+		a.XG.Visible = false
+		a.MZ.Visible = false
+		a.ESP.Visible = true
+		a.MISC.Visible = true
+		a.Tp.Visible = true
+	end)
+
+end
+coroutine.wrap(NMLC_fake_script)()
+local function AOGVW_fake_script() -- Ghost.LocalScript 
+	local script = Instance.new('LocalScript', Ghost)
+
+	local a = game.Workspace
+	local b = a.House
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local c = Instance.new("BillboardGui")
+		c.Parent = a.GhostModel
+		c.Size = UDim2.new(0,200,0,50)
+		c.Name = "BillboardGui"
+		c.AlwaysOnTop = true
+
+
+		local d = Instance.new("TextLabel")
+		d.Parent = c
+		d.Size = UDim2.new(0,200,0,50)
+		d.TextSize = 14
+		d.Text = "Ghost"
+		d.BackgroundTransparency = 1
+	end)
+end
+coroutine.wrap(AOGVW_fake_script)()
+local function OIZUW_fake_script() -- Bone.LocalScript 
+	local script = Instance.new('LocalScript', Bone)
+
+	local a = game.Workspace
+	local b = a.House
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local c = Instance.new("BillboardGui")
+		c.Parent = b.Bone
+		c.Size = UDim2.new(0,200,0,50)
+		c.Name = "BillboardGui"
+		c.AlwaysOnTop = true
+
+
+		local d = Instance.new("TextLabel")
+		d.Parent = c
+		d.Size = UDim2.new(0,200,0,50)
+		d.TextSize = 14
+		d.Text = "Bone"
+		d.BackgroundTransparency = 1
+	end)
+end
+coroutine.wrap(OIZUW_fake_script)()
+local function LOAQ_fake_script() -- FuseBox.LocalScript 
+	local script = Instance.new('LocalScript', FuseBox)
+
+	local a = game.Workspace
+	local b = a.House
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local c = Instance.new("BillboardGui")
+		c.Parent = b.FuseBox
+		c.Size = UDim2.new(0,200,0,50)
+		c.Name = "BillboardGui"
+		c.AlwaysOnTop = true
+
+
+		local d = Instance.new("TextLabel")
+		d.Parent = c
+		d.Size = UDim2.new(0,200,0,50)
+		d.TextSize = 14
+		d.Text = "FuseBox"
+		d.BackgroundTransparency = 1
+	end)
+end
+coroutine.wrap(LOAQ_fake_script)()
+local function MQFSSKY_fake_script() -- AS.LocalScript 
+	local script = Instance.new('LocalScript', AS)
+
+	local s = script.Parent.Parent.SS
+	local char = game.Players.LocalPlayer.Character
+
+	script.Parent.MouseButton1Click:Connect(function()
+		char.Humanoid.WalkSpeed = s.Text
+	end)
+end
+coroutine.wrap(MQFSSKY_fake_script)()
+local function HKTCBSQ_fake_script() -- NVA.LocalScript 
+	local script = Instance.new('LocalScript', NVA)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do wait(0.1) do 
+				game:GetService('Players').LocalPlayer.Data.Alone.Value = false
+			end
+		end 
+	end)
+
+end
+coroutine.wrap(HKTCBSQ_fake_script)()
+local function OSHKV_fake_script() -- IS.LocalScript 
+	local script = Instance.new('LocalScript', IS)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do wait(1)
+			game:GetService('Players').LocalPlayer.Data.Sanity = math.huge
+		end
+	end)
+
+end
+coroutine.wrap(OSHKV_fake_script)()
+local function VSFR_fake_script() -- CO.LocalScript 
+	local script = Instance.new('LocalScript', CO)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if game:GetService('Workspace').Orb then
+			script.Parent.Parent.TextLabel.Text = "Orb = true"
+			wait(0.2)
+			script.Parent.Parent.TextLabel.Visible = true
+			wait(2)
+			script.Parent.Parent.TextLabel.Visible = false
+		else
+			script.Parent.Parent.TextLabel.Text = "Orb = false"
+			wait(0.2)
+			script.Parent.Parent.TextLabel.Visible = true
+			wait(2)
+			script.Parent.Parent.TextLabel.Visible = false
+		end
+	end)
+end
+coroutine.wrap(VSFR_fake_script)()
+local function RCHIYVP_fake_script() -- EJ.LocalScript 
+	local script = Instance.new('LocalScript', EJ)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50	
+	end)
+end
+coroutine.wrap(RCHIYVP_fake_script)()
